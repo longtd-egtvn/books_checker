@@ -18,7 +18,7 @@ class GetStartedPage extends StatelessWidget {
                   '"Read. Change. Yourself"',
                   style: Theme.of(context).textTheme.headline4,
                 ),
-                SizedBox(height: 50),
+                SizedBox(height: 55),
                 TextButton.icon(
                   style: TextButton.styleFrom(
                     primary: Colors.white,
