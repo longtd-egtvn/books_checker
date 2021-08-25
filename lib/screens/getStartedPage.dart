@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
+import 'LoginPage.dart';
+
 class GetStartedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,13 @@ class GetStartedPage extends StatelessWidget {
                     backgroundColor: HexColor('#69639F'),
                     textStyle: TextStyle(fontSize: 18),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginPage(),
+                        ));
+                  },
                   icon: Icon(Icons.login_sharp),
                   label: Text('Sign In to get started'),
                 ),
